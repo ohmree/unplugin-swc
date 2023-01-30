@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/prettierrc",
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "semi": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "useTabs": false,
+  "arrowParens": "avoid",
+  "quoteProps": "consistent",
+  "printWidth": 100,
+  "pluginSearchDirs": ["."],
+  "plugins": ["prettier-plugin-packagejson"]
+}

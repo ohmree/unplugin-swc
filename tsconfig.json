@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "esnext",
+    "importsNotUsedAsValues": "error",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -9,6 +10,7 @@
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "allowJs": true,
+    "checkJs": true,
     "resolveJsonModule": true
   },
   "exclude": ["dist"]
