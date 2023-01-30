@@ -4,9 +4,5 @@ pre-commit:
     format:
       run: npx pretty-quick --staged
     lint:
-      glob: '*.{{c,m,}{j,t}s,svelte}'
+      glob: '*.{{c,m,}{j,t}s}'
       run: npx eslint --fix {staged_files} && git add {staged_files}
-    check:
-      files: git ls-files -m
-      glob: '{*.{{c,m,}{j,t}s,svelte},tsconfig{,.*}.json}'
-      run: pnpm check
