@@ -1,6 +1,6 @@
 {
-  "name": "unplugin-swc",
-  "version": "0.0.0",
+  "name": "@ohmree/unplugin-swc",
+  "version": "0.0.1",
   "description": "SWC plugin for Vite and Rollup",
   "license": "MIT",
   "type": "module",

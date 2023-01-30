@@ -1,17 +1,17 @@
-**💛 You can help the author become a full-time open-source maintainer by [sponsoring him on GitHub](https://github.com/sponsors/egoist).**
+**💛 You can help the original author of this become a full-time open-source maintainer by [sponsoring him on GitHub](https://github.com/sponsors/egoist).**
 
 ---
 
-# unplugin-swc
+# `@ohmree/unplugin-swc`
 
-[![npm version](https://badgen.net/npm/v/unplugin-swc)](https://npm.im/unplugin-swc)
+[![npm version](https://badgen.net/npm/v/@ohmree/unplugin-swc)](https://npm.im/@ohmree/unplugin-swc)
 
-> [SWC](https://swc.rs/) plugin for Vite and Rollup.
+> [SWC](https://swc.rs/) plugin for Vite and Rollup forked from [the original by egoist](https://github.com/egoist/unplugin-swc).
 
-## Install
+## Installation
 
-```bash
-npm i unplugin-swc @swc/core -D
+```shellsession
+$ npm i @ohmree/unplugin-swc -D # or pnpm, or yarn.
 ```
 
 ## Usage
@@ -51,12 +51,12 @@ If you wish to disable this behavior and use `.swcrc` to control above `jsc` opt
 // Or swc.rollup
 swc.vite({
   tsconfigFile: false,
-})
+});
 
 // It's also possible to use a custom tsconfig file instead of tsconfig.json
 swc.vite({
   tsconfigFile: './tsconfig.build.json',
-})
+});
 ```
 
 ### Minification
@@ -102,8 +102,10 @@ Custom [jsc](https://swc.rs/docs/configuration/compilation) options to merge wit
 
 ## Sponsors
 
+Go sponsor the original author of this plugin:
+
 [![sponsors](https://sponsors-images.egoist.sh/sponsors.svg)](https://github.com/sponsors/egoist)
 
 ## License
 
-MIT &copy; [EGOIST](https://github.com/sponsors/egoist)
+This project is licensed under [the MIT license](LICENSE.md)

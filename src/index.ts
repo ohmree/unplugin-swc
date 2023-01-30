@@ -30,7 +30,7 @@ function createRollupPlugin(minify?: boolean) {
 
 export default createUnplugin(
   ({ tsconfigFile, minify, include, exclude, ...options }: Options = {}) => {
-    const filter = createFilter(include || /\.[jt]sx?$/, exclude || /node_modules/);
+    const filter = createFilter(include ?? /\.[jt]sx?$/, exclude ?? /node_modules/);
     const rollupPlugin = createRollupPlugin(minify);
     return {
       name: 'swc',
@@ -72,7 +72,7 @@ export default createUnplugin(
           });
         }
 
-        if (compilerOptions.experimentalDecorators) {
+        if (compilerOptions.experimentalDecorators != null) {
           // class name is required by type-graphql to generate correct graphql type
           jsc.keepClassNames = true;
           Object.assign(jsc.parser!, {
@@ -88,7 +88,7 @@ export default createUnplugin(
           jsc.target = compilerOptions.target as JscTarget;
         }
 
-        if (options.jsc) {
+        if (options.jsc != null) {
           jsc = defu(options.jsc, jsc);
         }
 
